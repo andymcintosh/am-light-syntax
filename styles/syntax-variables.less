@@ -5,7 +5,8 @@
 // General colors
 @syntax-text-color:            @syntax-fg;
 @syntax-cursor-color:          @syntax-accent;
-@syntax-selection-color:       darken(@syntax-bg, 8%);
+// @syntax-selection-color:       darken(@syntax-bg, 8%);
+@syntax-selection-color:       fade(@syntax-accent, 12%);
 @syntax-selection-flash-color: @syntax-accent;
 @syntax-background-color:      @syntax-bg;
 
@@ -15,20 +16,19 @@
 @syntax-invisible-character-color: @syntax-guide;
 
 // For find and replace markers
-@syntax-result-marker-color:          fade(@syntax-accent, 20%);
+@syntax-result-marker-color:          fade(@syntax-accent, 12%);
 @syntax-result-marker-color-selected: @syntax-accent;
 
 // Gutter colors -----------------------------------
-@syntax-gutter-text-color:                @syntax-gutter;
 @syntax-gutter-text-color-selected:       @syntax-fg;
 @syntax-gutter-background-color:          @syntax-bg; // unused
 @syntax-gutter-background-color-selected: darken(@syntax-bg, 8%);
 
 // Git colors - For git diff info. i.e. in the gutter
-@syntax-color-renamed:  hsl(208, 100%, 66%);
-@syntax-color-added:    hsl(132,  60%, 44%);
-@syntax-color-modified: hsl( 40,  90%, 50%);
-@syntax-color-removed:  hsl(  0, 100%, 54%);
+@syntax-color-renamed:  hsl(208, 63%, 49%);
+@syntax-color-added:    hsl(114, 28%, 50%);
+@syntax-color-modified: hsl(49, 100%, 47%);
+@syntax-color-removed:  hsl(5, 72%, 41%);
 
 // For language entity colors
 @syntax-color-variable:   @hue-5;
@@ -48,7 +48,7 @@
 // Custom Syntax Variables -----------------------------------
 // Don't use in packages
 
-@syntax-cursor-line: fade(@syntax-fg, 5%); // needs to be semi-transparent to show search results
+@syntax-cursor-line: fade(@syntax-accent, 5%); // needs to be semi-transparent to show search results
 
 @syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
 @syntax-deprecated-bg: @syntax-color-modified;

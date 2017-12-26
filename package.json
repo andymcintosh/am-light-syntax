@@ -1,13 +1,13 @@
 {
-  "name": "one-light-syntax",
+  "name": "am-light-syntax",
   "theme": "syntax",
-  "version": "1.8.2",
-  "description": "Atom One light syntax theme",
+  "version": "0.0.1",
+  "description": "Light syntax theme based on one-light-syntax",
   "keywords": [
     "light",
     "syntax"
   ],
-  "repository": "https://github.com/atom/one-light-syntax",
+  "repository": "https://github.com/andymcintosh/am-light-syntax.git",
   "license": "MIT",
   "engines": {
     "atom": ">0.40.0"
