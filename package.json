@@ -11,5 +11,10 @@
   "license": "MIT",
   "engines": {
     "atom": ">0.40.0"
+  },
+  "apmInstallSource": {
+    "type": "git",
+    "source": "git@github.com:andymcintosh/am-light-syntax.git",
+    "sha": "9d2b42f8a1239c6aca3d06cd014fdcc22ca39271"
   }
 }
